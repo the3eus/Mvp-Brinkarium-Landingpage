@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Amatic SC", sans-serif;
+  
+  --color-primary-green: #3a6754;
+  --color-primary-green-light: #76a58f;
+  --color-primary-green-dark: #214f3d;
+  
+  --color-accent-orange: #924c0a;
+  --color-accent-orange-light: #fea35e;
+  --color-accent-orange-dark: #743900;
+  
+  --color-accent-blue: #739fcf;
+  --color-accent-blue-dark: #33618d;
+  
+  --color-bg-warm: #f9f9f9;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(0.95); opacity: 0.5; }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
+
+/* Custom rounded wood-like border style */
+.wood-card-border {
+  border: 2px solid #e2e2e2;
+  box-shadow: 0 4px 12px rgba(58, 103, 84, 0.05);
+}
+
+.font-display {
+  font-family: "Amatic SC", sans-serif;
+}
+
