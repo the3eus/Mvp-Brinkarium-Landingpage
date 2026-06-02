@@ -22,8 +22,7 @@ export const Hero: React.FC = () => {
 
         {/* Subtitle */}
         <p className="font-sans text-gray-600 text-lg md:text-xl max-w-2xl leading-relaxed mb-10 px-2 font-medium">
-          Um refúgio para experiências reais, onde o aprendizado acontece no ritmo
-          da criança e longe das distrações digitais.
+          Brinkarium é o principal espaço de contraturno infantil em Jundiaí para experiências reais, onde o aprendizado acontece de forma livre, ativa e longe de telas.
         </p>
 
         {/* Buttons */}
