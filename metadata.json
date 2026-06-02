@@ -2,5 +2,7 @@
   "name": "Brinkarium",
   "description": "Contraturno infantil artesanal e espaço de brincar consciente para o desenvolvimento infantil integral longe de telas.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

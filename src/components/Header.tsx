@@ -1,7 +1,6 @@
 import React from "react";
 import { WHATSAPP_LINK } from "../data";
 import { WhatsAppIcon } from "./PlayIcon";
-import logoImg from "../assets/images/b brinka.jpg";
 
 export const Header: React.FC = () => {
   return (
@@ -11,7 +10,7 @@ export const Header: React.FC = () => {
         <a href="#inicio" className="flex items-center gap-3 group">
           <div className="w-11 h-11 bg-white rounded-xl overflow-hidden shadow-sm transition-transform duration-300 group-hover:scale-105 select-none">
             <img
-              src={logoImg}
+              src="/images/b-brinka.jpg"
               alt="Logo Brinkarium"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

@@ -1,7 +1,6 @@
 import React from "react";
 import { WHATSAPP_LINK } from "../data";
 import { PlayIcon } from "./PlayIcon";
-import logoImg from "../assets/images/b brinka.jpg";
 
 export const Footer: React.FC = () => {
   return (
@@ -12,7 +11,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-3">
             <div className="w-11 h-11 bg-white rounded-xl overflow-hidden shadow-sm select-none">
               <img
-                src={logoImg}
+                src="/images/b-brinka.jpg"
                 alt="Logo Brinkarium"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -64,23 +63,24 @@ export const Footer: React.FC = () => {
           <div className="flex gap-3 items-start">
             <PlayIcon name="MapPin" size={18} className="text-primary-green flex-shrink-0 mt-0.5" />
             <div className="font-sans text-sm text-gray-500 font-medium">
-              <p>São Paulo, SP</p>
+              <p>R. Jorge Gebran, 44 - Parque do Colégio</p>
+              <p>Jundiaí - SP, 13209-140</p>
               <p className="text-xs text-gray-400 mt-0.5">Atendimento sob agendamento prévio</p>
             </div>
           </div>
 
           <div className="flex gap-3 items-start">
             <PlayIcon name="Phone" size={18} className="text-primary-green flex-shrink-0 mt-0.5" />
-            <a href="tel:11926929302" className="font-sans text-sm text-gray-500 font-semibold hover:text-primary-green transition-colors">
-              (11) 92692-9302
+            <a href="tel:17996649367" className="font-sans text-sm text-gray-500 font-semibold hover:text-primary-green transition-colors">
+              (17) 99664-9367
             </a>
           </div>
 
           <div className="flex gap-3 items-start">
             <PlayIcon name="Mail" size={18} className="text-primary-green flex-shrink-0 mt-0.5" />
-            <span className="font-sans text-sm text-gray-500 font-medium">
-              contato@brinkarium.com
-            </span>
+            <a href="mailto:brinkariumjundiai@gmail.com" className="font-sans text-sm text-gray-500 font-semibold hover:text-primary-green transition-colors">
+              brinkariumjundiai@gmail.com
+            </a>
           </div>
         </div>
       </div>

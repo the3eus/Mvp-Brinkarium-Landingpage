@@ -6,6 +6,7 @@ import { LessScreens } from "./components/LessScreens";
 import { UniverseOfPossibilities } from "./components/UniverseOfPossibilities";
 import { HarvestFruits } from "./components/HarvestFruits";
 import { PillarsAndAges } from "./components/PillarsAndAges";
+import { PricingAndPlans } from "./components/PricingAndPlans";
 import { AgendeVisita } from "./components/AgendeVisita";
 import { Footer } from "./components/Footer";
 import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
@@ -34,6 +35,9 @@ export default function App() {
 
         {/* Safety Pillars & Trust Profiles */}
         <PillarsAndAges />
+
+        {/* Flexible Formats & Pricing Table */}
+        <PricingAndPlans />
 
         {/* Final High-Converting Visitation Card */}
         <AgendeVisita />
