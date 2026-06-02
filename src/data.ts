@@ -44,10 +44,10 @@ export const ACTIVITIES: ActivityItem[] = [
     iconName: "BookOpen",
   },
   {
-    id: "reforco",
-    title: "Reforço",
-    description: "Apoio escolar humanizado em um ambiente acolhedor.",
-    iconName: "MessageSquareText",
+    id: "alfabetizacao",
+    title: "Alfabetização",
+    description: "Aprendizado da leitura e da escrita de forma acolhedora e estimulante.",
+    iconName: "BookText",
   },
 ];
 
@@ -87,5 +87,5 @@ export const PILLARS: PillarItem[] = [
   },
 ];
 
-export const WHATSAPP_NUMBER = "5517996649367"; // Standardized with country code
+export const WHATSAPP_NUMBER = "5511926929302"; // Standardized with country code
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+Contraturno+da+Brinkarium+e+como+agendar+uma+visita%21`;

@@ -71,8 +71,8 @@ export const Footer: React.FC = () => {
 
           <div className="flex gap-3 items-start">
             <PlayIcon name="Phone" size={18} className="text-primary-green flex-shrink-0 mt-0.5" />
-            <a href="tel:17996649367" className="font-sans text-sm text-gray-500 font-semibold hover:text-primary-green transition-colors">
-              (17) 99664-9367
+            <a href="tel:11926929302" className="font-sans text-sm text-gray-500 font-semibold hover:text-primary-green transition-colors">
+              (11) 92692-9302
             </a>
           </div>
 

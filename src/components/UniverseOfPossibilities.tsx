@@ -40,7 +40,7 @@ export const UniverseOfPossibilities: React.FC = () => {
       iconColor: "text-[#33618d]",
       border: "border-blue-50",
     },
-    reforco: {
+    alfabetizacao: {
       bg: "bg-[#fdfbf7]", // warm vanilla
       iconColor: "text-accent-orange",
       border: "border-orange-100",

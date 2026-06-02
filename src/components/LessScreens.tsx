@@ -50,7 +50,7 @@ export const LessScreens: React.FC = () => {
               </h3>
               <p className="font-sans text-gray-600 text-base md:text-lg leading-relaxed">
                 Presença, movimento e criatividade viva são os pilares indispensáveis
-                que sustentam todas as nossas tardes de aventura.
+                que sustentam todos os nossos dias de aventura.
               </p>
             </div>
           </div>

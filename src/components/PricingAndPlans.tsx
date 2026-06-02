@@ -1,6 +1,6 @@
 import React from "react";
 import { WHATSAPP_LINK } from "../data";
-import { Clock, Calendar, Check, Sparkles, PhoneCall, Gift } from "lucide-react";
+import { Clock, Calendar, Check, PhoneCall } from "lucide-react";
 
 export const PricingAndPlans: React.FC = () => {
   return (
@@ -42,7 +42,7 @@ export const PricingAndPlans: React.FC = () => {
         </div>
 
         {/* Pricing Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
           
           {/* Format 1: Hora Avulsa */}
           <div className="bg-white rounded-3xl p-8 border border-gray-150 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
@@ -60,11 +60,11 @@ export const PricingAndPlans: React.FC = () => {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center bg-gray-50 p-3.5 rounded-2xl">
                   <span className="font-sans font-semibold text-gray-700 text-[15px]">Diurna</span>
-                  <span className="font-sans font-bold text-primary-green text-lg">R$ 60 <span className="text-xs text-gray-400 font-medium">/hora</span></span>
+                  <span className="font-sans font-bold text-primary-green text-lg">R$ 80 <span className="text-xs text-gray-400 font-medium">/hora</span></span>
                 </div>
                 <div className="flex justify-between items-center bg-gray-50 p-3.5 rounded-2xl">
                   <span className="font-sans font-semibold text-gray-700 text-[15px]">Noturna</span>
-                  <span className="font-sans font-bold text-accent-orange text-lg">R$ 70 <span className="text-xs text-gray-400 font-medium">/hora</span></span>
+                  <span className="font-sans font-bold text-accent-orange text-lg">R$ 90 <span className="text-xs text-gray-400 font-medium">/hora</span></span>
                 </div>
               </div>
             </div>
@@ -113,38 +113,6 @@ export const PricingAndPlans: React.FC = () => {
             </div>
           </div>
 
-          {/* Format 3: Diária Integral & Planos */}
-          <div className="bg-white rounded-3xl p-8 border border-gray-150 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-accent-blue-dark font-semibold rounded-full text-xs font-sans mb-6">
-                <Gift className="w-3.5 h-3.5" /> Diária & Planos
-              </div>
-              <h3 className="font-display text-3xl font-bold text-gray-900 mb-2 tracking-wide">
-                DIÁRIA / RECORRENTES
-              </h3>
-              <p className="font-sans text-gray-500 text-sm mb-6 leading-relaxed">
-                Excelente custo-benefício para famílias com frequência constante ou para o dia inteiro de imersão.
-              </p>
-              
-              <div className="space-y-4 mb-8">
-                <div className="flex justify-between items-center bg-gray-50 p-3.5 rounded-2xl">
-                  <span className="font-sans font-semibold text-gray-700 text-[15px]">Diária Integral</span>
-                  <span className="font-sans font-bold text-primary-green text-lg">R$ 290 <span className="text-xs text-gray-400 font-medium">/dia</span></span>
-                </div>
-                <div className="bg-gradient-to-r from-blue-50/50 to-emerald-50/50 p-3.5 rounded-2xl border border-dashed border-primary-green/20 text-center">
-                  <p className="font-sans font-bold text-[13px] text-primary-green-dark mb-0.5">Planos Semanais e Mensais</p>
-                  <p className="font-sans text-xs text-gray-500 font-semibold">Temos opções de planos recorrentes com valores reduzidos! 😊</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-4 border-t border-gray-100">
-              <span className="text-xs font-sans text-gray-400 font-semibold flex items-center gap-1.5 justify-center text-center">
-                <Sparkles className="w-3.5 h-3.5 text-amber-500" /> Valores decrescentes para frequência programada.
-              </span>
-            </div>
-          </div>
-
         </div>
 
         {/* Highlight details checklist box */}
@@ -181,7 +149,7 @@ export const PricingAndPlans: React.FC = () => {
               className="inline-flex items-center gap-3 bg-accent-orange hover:bg-accent-orange-dark text-white font-display text-xl md:text-2xl font-bold px-8 py-4.5 rounded-full transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 tracking-wider text-center"
             >
               <PhoneCall className="w-5 h-5 text-white" />
-              CONSULTAR VALOR DOS PLANOS
+              CONSULTAR DISPONIBILIDADE
             </a>
           </div>
         </div>
