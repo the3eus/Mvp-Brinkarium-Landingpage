@@ -1,4 +1,5 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Essence } from "./components/Essence";
@@ -48,6 +49,9 @@ export default function App() {
 
       {/* Floating Interactive WhatsApp trigger */}
       <FloatingWhatsApp />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
