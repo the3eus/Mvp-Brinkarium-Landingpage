@@ -12,10 +12,13 @@
 </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="dns-prefetch" href="https://wa.me" />
     
     <!-- SEO Meta Tags -->
-    <title>Brinkarium | Contraturno Infantil em Jundiaí e Espaço de Brinkarium</title>
-    <meta name="description" content="Brinkarium é o seu espaço de contraturno infantil artesanal em Jundiaí. Focado no brincar pioneiro, desenvolvimento integral e experiências ricas sem telas para crianças a partir de 4 anos. Conheça as oficinas da Brinkarium!" />
+    <title>Contraturno Infantil em Jundiaí | Brinkarium</title>
+    <meta name="description" content="Contraturno infantil em Jundiaí para crianças a partir de 4 anos. Atividades temáticas das 7h às 23h: culinária, artes, esportes e mais. Sem telas, com criatividade. Fale no WhatsApp!" />
     <meta name="keywords" content="Brinkarium, Brinkarium Jundiaí, contraturno Brinkarium, contraturno infantil Jundiaí, brincar consciente Jundiaí, desenvolvimento infantil, atividades infantis sem telas Jundiaí, recreação infantil, oficina infantil, apoio escolar Jundiaí" />
     <meta name="author" content="Brinkarium" />
     <meta name="robots" content="index, follow" />
@@ -40,16 +43,18 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 
-    <!-- Structured Data (JSON-LD) for LocalBusiness / School / Education -->
+    <!-- Structured Data (JSON-LD) for LocalBusiness -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "Brinkarium",
-        "description": "Espaço de contraturno infantil artesanal em Jundiaí focado no brincar consciente e desenvolvimento infantil longe de telas.",
+        "@type": ["ChildCare", "LocalBusiness"],
+        "name": "Brinkarium | Contraturno Infantil",
+        "description": "Espaço de contraturno infantil em Jundiaí para crianças a partir de 4 anos. Atividades temáticas das 7h às 23h: culinária, artes, jardinagem, esportes e construção. Sem telas, com criatividade e movimento.",
         "image": "https://brinkarium.com.br/images/b-brinka.jpg",
         "url": "https://brinkarium.com.br",
         "telephone": "+5511926929302",
+        "priceRange": "R$ 80 - R$ 190",
+        "openingHours": "Mo-Fr 07:00-23:00",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "R. Jorge Gebran, 44 - Parque do Colégio",
@@ -58,13 +63,28 @@
           "postalCode": "13209-140",
           "addressCountry": "BR"
         },
-        "offers": {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Contraturno Infantil Brinkarium"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "-23.18",
+          "longitude": "-46.88"
+        },
+        "sameAs": [
+          "https://www.instagram.com/brinkarium/"
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Hora Avulsa Diurna",
+            "price": "80",
+            "priceCurrency": "BRL"
+          },
+          {
+            "@type": "Offer",
+            "name": "Turno de 4h Diurno",
+            "price": "160",
+            "priceCurrency": "BRL"
           }
-        }
+        ]
       }
     </script>
   </head>

@@ -87,5 +87,22 @@ export const PILLARS: PillarItem[] = [
   },
 ];
 
-export const WHATSAPP_NUMBER = "5511926929302"; // Standardized with country code
+export const WHATSAPP_NUMBER = "5511926929302";
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+Contraturno+da+Brinkarium+e+como+agendar+uma+visita%21`;
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+export function trackWhatsAppClick(source: string = "geral") {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", "whatsapp_click", {
+      event_category: "conversao",
+      event_label: source,
+    });
+    // Google Ads conversion — substitua AW-XXXXXXXXX/YYYYYYYY pelo seu ID real
+    // window.gtag("event", "conversion", { send_to: "AW-XXXXXXXXX/YYYYYYYY" });
+  }
+}

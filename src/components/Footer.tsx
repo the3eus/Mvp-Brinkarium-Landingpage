@@ -2,6 +2,8 @@ import React from "react";
 import { WHATSAPP_LINK } from "../data";
 import { PlayIcon } from "./PlayIcon";
 
+const INSTAGRAM_URL = "https://www.instagram.com/brinkarium/";
+
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-50 border-t border-gray-150 py-16 px-4 md:px-8 text-gray-650">
@@ -51,6 +53,11 @@ export const Footer: React.FC = () => {
                 Voltar ao Topo
               </a>
             </li>
+            <li>
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary-green transition-colors">
+                Instagram
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -92,8 +99,8 @@ export const Footer: React.FC = () => {
 
         {/* Small Legal */}
         <div className="flex gap-6 text-xs text-gray-400 font-sans">
-          <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:underline">Privacidade</a>
-          <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:underline">Termos</a>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="hover:underline">@brinkarium</a>
+          <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:underline">Fale Conosco</a>
         </div>
       </div>
     </footer>

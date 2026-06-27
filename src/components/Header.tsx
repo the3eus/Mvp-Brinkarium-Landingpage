@@ -1,5 +1,5 @@
 import React from "react";
-import { WHATSAPP_LINK } from "../data";
+import { WHATSAPP_LINK, trackWhatsAppClick } from "../data";
 import { WhatsAppIcon } from "./PlayIcon";
 
 export const Header: React.FC = () => {
@@ -32,6 +32,7 @@ export const Header: React.FC = () => {
           target="_blank"
           aria-label="Fale conosco no WhatsApp"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick("header")}
           className="flex items-center gap-2 bg-primary-green hover:bg-primary-green-dark text-white font-display text-[15px] md:text-lg font-bold px-4 py-2 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5"
         >
           <WhatsAppIcon className="w-4 h-4 md:w-5 md:h-5 text-white" />

@@ -1,5 +1,5 @@
 import React from "react";
-import { WHATSAPP_LINK } from "../data";
+import { WHATSAPP_LINK, trackWhatsAppClick } from "../data";
 import { MessageSquareText } from "lucide-react";
 
 export const AgendeVisita: React.FC = () => {
@@ -28,6 +28,7 @@ export const AgendeVisita: React.FC = () => {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick("agende-visita")}
               className="group flex items-center justify-center gap-3 bg-accent-orange-light hover:bg-[#ffb372] text-[#301400] font-display text-2xl md:text-3xl font-bold px-10 py-5 rounded-full transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 tracking-wider"
             >
               <MessageSquareText className="w-6 h-6 stroke-[2.5] text-[#301400] transition-transform group-hover:scale-110 duration-300" />

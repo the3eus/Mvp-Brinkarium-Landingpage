@@ -1,5 +1,5 @@
 import React from "react";
-import { WHATSAPP_LINK } from "../data";
+import { WHATSAPP_LINK, trackWhatsAppClick } from "../data";
 import { Sparkles } from "lucide-react";
 
 export const Hero: React.FC = () => {
@@ -31,6 +31,7 @@ export const Hero: React.FC = () => {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick("hero-conhecer")}
             className="w-full sm:w-auto text-center bg-primary-green hover:bg-primary-green-dark text-white font-display text-xl md:text-2xl font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 tracking-wider"
           >
             QUERO CONHECER A BRINKARIUM
@@ -39,6 +40,7 @@ export const Hero: React.FC = () => {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick("hero-whatsapp")}
             className="w-full sm:w-auto text-center bg-accent-orange hover:bg-accent-orange-dark text-white font-display text-xl md:text-2xl font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 tracking-wider"
           >
             FALAR PELO WHATSAPP
